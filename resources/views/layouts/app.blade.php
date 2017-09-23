@@ -7,15 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+	<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+	<script src="{{ asset('js/app.js') }}"></script>
+
 	{!! Charts::styles() !!}
 </head>
 <body>
 @yield('header')
 @yield('content')
 @yield('footer')
-
-<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-<script src="{{ asset('js/app.js') }}"></script>
 
 {!! Charts::scripts() !!}
 {!! $user_agent->script() !!}

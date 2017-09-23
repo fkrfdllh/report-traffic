@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'ChartController@index');
-// Route::post('/search/{id}', 'ChartController@show')->name('search');
+Route::get('/{month}', 'ChartController@index');
+Route::post('/send', 'ChartController@send');
